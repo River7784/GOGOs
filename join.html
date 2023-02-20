@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/join.js"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <div id="all_wrap">
+        <div id="join_wrap">
+            <!-- 회원가입 약관 동의 -->
+            <div id="agree" class="join_section">
+                <h1 class="join_member">회원가입</h1>
+                <h2 class="confirm_info">아래 약관을 읽으신 후 동의하신다면 체크박스를 클릭해주세요.</h2>
+                <form action="#" id="join_form">
+                    <ul class="join_box">
+                        <li class="check_box check01">
+                            <ul class="clearfix">
+                                <li class="all_confirm must_confirm">이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</li>
+                                <li class="check_all_btn">
+                                    <input type="checkbox" name="chall" id="chk" class="ckall ckbox">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="check_box check02">
+                            <ul class="clearfix">
+                                <li class="must_confirm">
+                                    이용약관(필수)
+                                </li>
+                                <li class="check_btn">
+                                    <input type="checkbox" name="chk" class="ck1 ckbox"> 
+                                </li>
+                            </ul>
+                            <textarea id="text01" readonly>저희 GOGOs(이하 ‘서비스’)를 이용해 주셔서 감사합니다. 본 약관은 다양한 홈페이지의 서비스의 이용과 관련하여 서비스를 제공하는 River와(이하 ‘가람’)와 이를 이용하는 GoGo 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 GoGo 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                            </textarea>
+                        </li>
+                        <li class="check_box check03">
+                            <ul class="clearfix">
+                                <li class="must_confirm">
+                                    개인정보 수집 및 이용에 대한 안내(필수)
+                                </li>
+                                <li class="check_btn">
+                                    <input type="checkbox" name="chk" class="ck2 ckbox">
+                                </li>
+                            </ul>
+                            <textarea id="text02" readonly>저희 GOGOs(이하 ‘서비스’)를 이용해 주셔서 감사합니다. 본 약관은 다양한 홈페이지의 서비스의 이용과 관련하여 서비스를 제공하는 River와(이하 ‘가람’)와 이를 이용하는 GoGo 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 GoGo 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                            </textarea>
+                        </li>
+                    </ul>
+                    <ul class="btn_wrap clearfix">
+                        <li>
+                            <button type="button" class="hover_btn btn1" onclick="location.href='index.html'">뒤로가기</button>
+                        </li>
+                        <li>
+                            <button type="button" class="hover_btn btn2">동의</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!-- 회원가입 정보 입력 -->
+            <div id="insert_your_info" class="join_section">
+                <h1 class="join_member">회원가입</h1>
+                <h2 class="confirm_info">회원정보입력</h2>
+                <form action="#" id="info_form">
+                    <fieldset>
+                        <legend>회원가입</legend>
+                        <ul class="info_box">
+                            <li>
+                                <div class="info_id">
+                                    <input type="text" class="common_list_style" id="user_id" placeholder="아이디 입력(6~20자)(필수)" required>
+                                    <button>중복 확인</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="password" class="common_list_style" id="user_pw" placeholder="비밀번호 입력(문자,숫자 포함 8~20자)(필수)" required>
+                            </li>
+                            <li>
+                                <input type="password" class="common_list_style" id="user_pw_check" placeholder="비밀번호 확인(필수)" required>
+                            </li>
+                            <li>
+                                <input type="text" class="common_list_style" id="user_email" placeholder="이메일 주소">
+                                <select name="email" id="select_email" class="common_list_style">
+                                    <option value="" selected>선택</option>
+                                    <option value="gmail">gmail.com</option>
+                                    <option value="naver">naver.com</option>
+                                    <option value="hanmail">hanmail.net</option>
+                                    <option value="#">직접입력</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="text" class="common_list_style" id="user_phone" placeholder="휴대폰 번호 입력('-'제외 11자리)">
+                            </li>
+                        </ul>
+                        <ul class="info_btn_wrap">
+                            <li>
+                                <button type="button" class="info_btn1">뒤로가기</button>
+                            </li>
+                            <li>
+                                <button type="button" class="info_btn2">회원가입</button>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

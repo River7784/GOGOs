@@ -1,0 +1,524 @@
+@charset "UTF-8";
+body{
+    overflow-x: hidden;
+}
+*::selection{
+    background-color: transparent;
+}
+/* 로그인 팝업 */
+.stop-scroll{
+    height: 100%;
+    overflow: hidden;
+}
+#blur{
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    opacity: 0.8; 
+    z-index : 9999;
+  }
+#login_popup{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #fff;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 30%);
+    z-index: 10000;
+    border-radius: 10px;
+}
+#login_popup>.popup_close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 5px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+/* 기본 초기화 */
+fieldset{
+    border: none;
+}
+legend{
+    display: none;
+}
+#login_form{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    top: 50px;
+}
+/* 공통 스타일 */
+.common_popup_style{
+    margin-bottom: 20px;
+    width: 70%;
+    height: 50px;
+    font-size: 1.5em;
+    padding: 2px 0px 2px 10px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}
+/* 팝업내부스타일 */
+#login_form{
+    position: relative;
+}
+.login_head{
+    position: relative;
+    width: 100px;
+    left: 50px;
+    height: 30px;
+    font-size: 2em;
+    font-family: "GmarketSans";
+    margin-bottom: 30px;
+}
+.login_box{
+    text-align: center;
+}
+.popup_btn1{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    left: 50%;
+    border-radius: 10px;
+    margin-left: -35%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+.popup_btn1:hover{
+    background-color: #777;
+    color: #eee;
+}
+.go_join{
+    display: inline-block;
+    position: relative;
+    left: 275px;
+    padding: 10px 0;
+    height: 30px;
+    width: 100px;
+}
+/*div header*/
+#head{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+/*bg_imgs*/
+.bg{
+    position: relative;
+    width: 100%;
+}
+.bg_wrap{
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.bg_div{
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+}
+.bg_div>img{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    filter: brightness(60%);
+}
+.bg_div>a{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    top: -200px;
+    width: 360px;
+    left: 35px;
+    line-height: 2.5em;
+}
+.bg_div>a>p{
+    color: #fff;
+    width: 350px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 3px 3px 20px #000;
+    font-family: "GmarketSans", gulim;
+}
+/*h1 and main_menu*/
+#main_header{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+    height: 500px;
+    top: -700px;
+}
+.common_style_header{
+    top: 20px;
+}
+/*main_logo*/
+#main_logo{
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+#main_logo>a{
+    width: 100%;
+    height: 100%;
+}
+#main_logo>a>img{
+    width: 100%;
+    height: 90%;
+}
+/*month_content*/
+#main_header>h2{
+    position: relative;
+    text-align: center;
+    top: 120px;
+    color: #fff;
+    text-shadow: 2px 2px 20px #000;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: "GmarketSans", gulim;
+}
+/*menu*/
+/*login_ul*/
+#main_header #login_link{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    top: -160px;
+    display: flex;
+}
+#main_header #login_link>li{
+    padding: 0 10px;
+    line-height: 1.2em;
+    border-right: 2px solid #aaa;
+}
+#main_header #login_link>li:last-child{
+    border: none;
+}
+#main_header #login_link>li>a{
+    color: #999;
+    font-weight: bold;
+}
+/*main_menu*/
+nav>#main_menu{
+    position: relative;
+    width: 300px;
+    display: flex;
+    left: 700px;
+    top: -150px;
+}
+nav>#main_menu>li{
+    width: 80px;
+    font-size: 1.1em;
+    font-family: "GmarketSans", gulim;
+    text-align: center;
+}
+nav>#main_menu>li>a{
+    color: #ccc;
+}
+/*content1*/
+#content1{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#location{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+#location>h2{
+    width: 600px;
+    left: 0;
+}
+#location>h2>a{
+    color: #000;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "GmarketSans";
+}
+#location>span{
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 1.2em;
+    color: #999;
+    font-family: "GmarketSans";
+}
+#find_location{
+    width: 100%;
+    height: 450px;
+}
+.location_menu{
+    display: flex;
+}
+.location_menu>li{
+    width: 33.33%;
+    margin-right: 2%;
+}
+.location_menu>li:last-child{
+    margin: 0;
+}
+.location_menu>li>div{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.location_menu>li>div>a{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+.location_menu>li>div>a>img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 4%;
+}
+.location_menu>li>div>h3{
+    position: relative;
+    font-size: 1.3em;
+    font-family: "GmarketSans";
+    left: 10px;
+}
+/*content2*/
+#content2{
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+/*bg vid*/
+#bg2{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+#bg2>video{
+    width: 100%;
+    filter: brightness(30%);
+}
+/*p*/
+#most_in_seoul{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.most_wrap{
+    position: relative;
+    top: -750px;
+    z-index: 2000;
+}
+.most_wrap h2{
+    font-size: 13em;
+    font-weight: bold;
+    font-family: "GmarketSans";
+    color: #fff;
+    text-align: center;
+}
+.most_wrap h3{
+    font-size: 6em;
+    font-weight: bold;
+    font-family: "GmarketSans";
+    color: #fff;
+    letter-spacing: -3px;
+    text-align: center;
+}
+.most_wrap p{
+    font-size: 1.3em;
+    font-family: "GmarketSans";
+    color: #fff;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+.most_wrap a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: "GmarketSans";
+    color: #999;
+    font-style: oblique;
+    margin-top: 20px;
+    left: 900px;
+}
+/*content3*/
+#content3{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#review{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#review a>h2{
+    margin-top: 80px;
+    color: #000;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "GmarketSans";
+    position: relative;
+}
+#review h3{
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 1.2em;
+    color: #999;
+    font-family: "GmarketSans";
+}
+.news_wrap{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+}
+/*main_news*/
+.main_news{
+    width: 600px;
+    background-image: url(../images/content2_img/cafe_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+    height: 640px;
+    border-radius: 6%;
+}
+.main_news h4{
+    position: relative;
+    padding-left: 20px;
+    top: 350px;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 3px 3px 20px #000;
+    font-family: "GmarketSans", gulim;
+}
+.main_news p{
+    position: relative;
+    padding-left: 20px;
+    top: 380px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 20px #000;
+    font-family: "GmarketSans", gulim;
+    line-height: 1.2em;
+}
+/*sub_news*/
+.sub_news{
+    width: 350px;
+    position: relative;
+    margin-left: 50px;
+}
+.sub_news1{
+    margin-bottom: 25px;
+    height: 300px;
+}
+.sub_news1>a>img{
+    width: 100%;
+    height: 250px;
+    border-radius: 50px;
+}
+.sub_news1>a>h4{
+    font-family: "GmarketSans", gulim;
+    margin: 5px;
+}
+.sub_news1>p{
+    font-family: "GmarketSans", gulim;
+    margin-left: 5px;
+    font-size: 0.8em;
+    line-height: 1.1em;
+}
+
+.sub_news2{
+    margin-bottom: 30px;
+    height: 300px;
+}
+.sub_news2>a>img{
+    width: 100%;
+    height: 250px;
+    border-radius: 50px;
+}
+.sub_news2>a>h4{
+    font-family: "GmarketSans", gulim;
+    margin: 5px;
+}
+.sub_news2>p{
+    font-family: "GmarketSans", gulim;
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+/*footer*/
+#foot{
+    width: 100%;
+    position: relative;
+    background-color: black;
+    height: auto;
+}
+#footer{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+#footer_link{
+    position: relative;
+    font-family: "GmarketSans", gulim;
+    padding: 35px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 30px;
+    overflow: hidden;
+}
+#footer_link>li{
+    display: inline-block;
+    margin: 0 auto;
+}
+#footer_link>li>a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 20px;
+    padding-right: 27px;
+    border-right: 1px solid #fff;
+}
+#footer_link>li:first-child>a{
+    padding-left: 27px;
+}
+#footer_link>li:last-child>a{
+    border: none;
+}
+#footer>address{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+#footer>address>span{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}

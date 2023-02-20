@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/location.js"></script>
+    <title>GOGOs</title>
+    <link rel="icon" href="images/main_logo_icon_green_ver3.png">
+    <link rel="favicon" href="images/main_logo_icon_green_ver3.png">
+</head>
+<body>
+    <!-- 레이어 팝업시 배경 클릭안되고 블러 처리용 div -->
+    <div id="blur"></div>
+    <!-- 로그인 팝업창 -->
+    <div id="login_popup">
+        <a href="#" class="popup_close">X</a>
+        <div class="login_popup_content">
+            <form action="#" id="login_form">
+                <fieldset>
+                    <legend>로그인</legend>
+                    <h2 class="login_head">로그인</h2>
+                    <ul class="login_box">
+                        <li>
+                            <input type="text" class="popup_id common_popup_style" placeholder="아이디 입력">
+                        </li>
+                        <li>
+                            <input type="password" class="popup_pw common_popup_style" placeholder="비밀번호 입력">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button" class="popup_btn1">로그인</button>
+                        </li>
+                    </ul>
+                    <a class="go_join" href="join.html"><p>회원가입</p></a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="Allwrap">
+        <!--div width : 100%, 안에 section들 크기를 max 1000px-->
+        <div id="head">
+            <section id="bg1" class="bg">
+                <h2 class="all_dis_none">백그라운드전체</h2>
+                <div class="bg_wrap">
+                    <div class="bg_div bg_img1">
+                        <img class="img1" src="images/bg_img/sub_bg_img1.jpeg" alt="벚꽃">
+                        <p class="p1">
+                            장소 찾아보기
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <header id="main_header">
+                <h1 id="main_logo" class="common_style_header">
+                    <a href="index.html">
+                        <img src="images/main_logo_icon_green_ver3.png" alt="메인로고">
+                    </a>
+                </h1>
+                <ul id="login_link" class="common_style_header">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+                <nav>
+                    <ul id="main_menu" class="common_style_header">
+                        <li><a href="#">장소</a></li>
+                        <li><a href="#">테마</a></li>
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="content1">
+            <div id="location">
+                <form action="#">
+                    <fieldset class="sort_fieldset">
+                        <legend>찾아보기필터</legend>
+                        <select class="ewns sort_select">
+                            <option value="all_select">모두 보기</option>
+                            <option value="east">강동</option>
+                            <option value="west">강서</option>
+                            <option value="south">강남</option>
+                            <option value="north">강북</option>
+                        </select>
+                        <select class="sort sort_select">
+                            <option value="all_select">모두 정렬</option>
+                            <option value="ganada">가나다순</option>
+                            <option value="most_search">검색많은순</option>
+                        </select>
+                    </fieldset>
+                </form>
+                <div id="loca_items">
+                    <ul class="loc_ul first_page">
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gangnam.jpeg" alt="강남구"><p class="con_p0">강남구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gangdong.jpg" alt="강동구"><p class="con_p1">강동구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gangbuk.jpeg" alt="강북구"><p class="con_p2">강북구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gangseo.jpeg" alt="강서구"><p class="con_p3">강서구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gwanak.jpeg" alt="관악구"><p class="con_p4">관악구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gwangjin.jpeg" alt="광진구"><p class="con_p5">광진구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/guro.jpeg" alt="구로구"><p class="con_p6">구로구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/geumchun.jpeg" alt="금천구"><p class="con_p7">금천구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/nowon.jpeg" alt="노원구"><p class="con_p8">노원구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/dobong.jpeg" alt="도봉구"><p class="con_p9">도봉구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/dongdaemun.jpg" alt="동대문구"><p class="con_p10">동대문구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/dongjak.jpeg" alt="동작구"><p class="con_p11">동작구</p></a></li>
+                    </ul>
+                    <ul class="loc_ul second_page">
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/mapo.jpg" alt="마포구"><p class="con_p0">마포구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/seodaemun.jpg" alt="서대문구"><p class="con_p1">서대문구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gangbuk.jpeg" alt="서초구"><p class="con_p2">서초구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/seongdong.jpeg" alt="성동구"><p class="con_p3">성동구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/gangdong.jpg" alt="성북구"><p class="con_p4">성북구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/songpa.jpg" alt="송파구"><p class="con_p5">송파구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/yangcheon.jpeg" alt="양천구"><p class="con_p6">양천구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/yeongdeungpo.jpg" alt="영등포구"><p class="con_p7">영등포구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/yongsan.jpg" alt="용산구"><p class="con_p8">용산구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/eunpyeong.jpeg" alt="은평구"><p class="con_p9">은평구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/jongno.jpeg" alt="종로구"><p class="con_p10">종로구</p></a></li>
+                        <li class="loc_li"><a href="#"><img src="images/sub_location_content1_img/jung.jpeg" alt="중구"><p class="con_p11">중구</p></a></li>
+                    </ul>
+                    <div id="page_num">
+                        <div class="prev_page">
+                            <a href="">&lt;</a>
+                        </div>
+                        <ul class="pages">
+                            <li><a href="#" class="page_num_first">1</a></li>
+                            <li><a href="#" class="page_num_second">2</a></li>
+                        </ul>
+                        <div class="next_page">
+                            <a href="#">&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <footer id="footer">
+                <ul id="footer_link">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <address>
+                    <span>&copy;2023 River All Rights Reserved</span>
+                </address>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "GmarketSans";
+    src: url(../font/GmarketSansTTFMedium.ttf);
+}
+@font-face {
+    font-family: "GmarketSansEB";
+    src: url(../font/GmarketSansTTFBold.ttf);
+}
+@font-face {
+    font-family: "GmarketSansLT";
+    src: url(../font/GmarketSansTTFLight.ttf);
+}
+.all_dis_none{
+    display: none;
+}
