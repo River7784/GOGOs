@@ -512,6 +512,7 @@ nav>#main_menu>li>a{
     position: relative;
     background-color: black;
     height: auto;
+    top: 50px;
 }
 #footer{
     position: relative;

@@ -88,6 +88,9 @@
     right: 40px;
     margin-top: -10px;
 }
+.check03{
+    margin-bottom: 10px;
+}
 .check_box textarea{
     position: relative;
     margin-top: -10px;
@@ -99,6 +102,10 @@
     color: #888;
     border: 1px solid #ccc;
     text-align: left;
+    resize: none;
+}
+.check_box textarea:focus{
+    outline: none;
 }
 .clearfix::after{
     content: "";
@@ -106,7 +113,7 @@
     clear: both;
 }
 .btn_wrap{
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .btn_wrap>li{
     float: left;
@@ -123,11 +130,11 @@
     border: none;
 }
 .btn1{
-    background-color: #cfcfcf;
+    background-color: #dfdfdf;
     color:#888;
 }
 .btn2{
-    background-color: lightsalmon;
+    background-color: orange;
     color: #fff;
 }
 
@@ -206,10 +213,10 @@ input::placeholder{
     border: none;
 }
 .info_btn1{
-    background-color: #cfcfcf;
+    background-color: #dfdfdf;
     color:#888;
 }
 .info_btn2{
-    background-color: lightsalmon;
+    background-color: orange;
     color: #fff;
 }
