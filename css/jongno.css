@@ -398,6 +398,7 @@ nav>#main_menu>li>a{
     width: 90%;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color: #eaeaea;
 }
 .side_ul>li>a{
     display: inline-block;
@@ -421,7 +422,7 @@ nav>#main_menu>li>a{
 .side_ul>li>a>p{
     position: relative;
     display: inline-block;
-    width: 300px;
+    width: 285px;
     height : 40px;
     left: 140px;
     top: -70px;
@@ -434,7 +435,6 @@ nav>#main_menu>li>a{
 }
 
 /* 지도 css */
-
 .map_wrap {
     position:relative;
     overflow:hidden;
@@ -513,10 +513,6 @@ nav>#main_menu>li>a{
 .custom_zoomcontrol span:first-child{
     border-bottom:1px solid #bfbfbf;
 }            
-
-
-
-
 
 /* 3번컨텐츠 */
 #tips_wrap{
