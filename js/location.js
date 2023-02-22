@@ -43,7 +43,8 @@ $(function(){
             textUnderlinePosition : "under"
         });
         $(this).css({
-            boxShadow : "4px 4px 4px #bbb"
+            boxShadow : "0px 2px 5px #bbb",
+            transition : "all 0.3s cubic-bezier(.25,.8,.25,1)"
         })
     },function(){
         let index=$(this).index();

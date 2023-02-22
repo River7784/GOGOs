@@ -4,36 +4,33 @@ $(function(){
     $(".a1").hover(function(){
         $(".img1").css({
             filter : "brightness(90%)",
-            scale : "1.1",
+            transition : "all 0.5s cubic-bezier(.25,.8,.25,1)"
         })
     },function(){
         $(".img1").css({
             filter : "brightness(60%)",
-            scale : "1"
         });
     });
     //bg2
     $(".a2").hover(function(){
         $(".img2").css({
             filter : "brightness(90%)",
-            scale : "1.05"
+            transition : "all 0.5s cubic-bezier(.25,.8,.25,1)"
         })
     },function(){
         $(".img2").css({
             filter : "brightness(60%)",
-            scale : "1"
         });
     });
     //bg3
     $(".a3").hover(function(){
         $(".img3").css({
             filter : "brightness(90%)",
-            scale : "1.1"
+            transition : "all 0.5s cubic-bezier(.25,.8,.25,1)"
         })
     },function(){
         $(".img3").css({
             filter : "brightness(60%)",
-            scale : "1"
         });
     });
     //login_popup
@@ -78,6 +75,7 @@ $(function(){
         highlight=$(this).index();
         $(".location_menu .goimg"+(highlight+1)).css({
             scale : '1.1',
+            transition : "all 0.3s cubic-bezier(.25,.8,.25,1)"
         })
     },function(){
         highlight=$(this).index();

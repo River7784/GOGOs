@@ -14,21 +14,23 @@ $(function(){
     $(".btn1").hover(function(){
         $(this).css({
             cursor : "pointer",
-            backgroundColor : "#bbb"
+            backgroundColor : "#bbb",
+            color : "#eee"
         })
     },function(){
         $(this).css({
-            backgroundColor : "#cfcfcf"
+            backgroundColor : "#dfdfdf",
+            color : "#888"
         })
     })
     $(".btn2").hover(function(){
         $(this).css({
             cursor : "pointer",
-            backgroundColor : "orange"
+            backgroundColor : "#FF3A13"
         })
     },function(){
         $(this).css({
-            backgroundColor : "lightsalmon"
+            backgroundColor : "orange"
         })
     });
     $(".btn2").click(function(){
@@ -44,11 +46,13 @@ $(function(){
     $(".info_btn1").hover(function(){
         $(this).css({
             cursor : "pointer",
-            backgroundColor : "#bbb"
+            backgroundColor : "#bbb",
+            color : "#eee"
         })
     },function(){
         $(this).css({
-            backgroundColor : "#cfcfcf"
+            backgroundColor : "#dfdfdf",
+            color : "#888"
         })
     })
     $(".info_btn1").click(function(){
@@ -58,11 +62,11 @@ $(function(){
     $(".info_btn2").hover(function(){
         $(this).css({
             cursor : "pointer",
-            backgroundColor : "orange"
+            backgroundColor : "#FF3A13"
         })
     },function(){
         $(this).css({
-            backgroundColor : "lightsalmon"
+            backgroundColor : "orange"
         })
     });
     $(".info_btn2").click(function(){
