@@ -20,26 +20,29 @@
     <div id="blur"></div>
     <!-- 로그인 팝업창 -->
     <div id="login_popup">
-        <a href="#" class="popup_close">X</a>
+        <a href="#" class="popup_close"><img src="images/icon_img/x_img.png" alt="닫기" class="popup_close_img"></a>
         <div class="login_popup_content">
             <form action="#" id="login_form">
                 <fieldset>
                     <legend>로그인</legend>
                     <h2 class="login_head">로그인</h2>
                     <ul class="login_box">
-                        <li>
+                        <li class="popup_first_li">
+                            <p class="id_p common_p_style">아이디</p>
                             <input type="text" class="popup_id common_popup_style" placeholder="아이디 입력">
                         </li>
                         <li>
+                            <p class="pw_p common_p_style">비밀번호</p>
                             <input type="password" class="popup_pw common_popup_style" placeholder="비밀번호 입력">
+                            <p class="findpw_p">비밀번호 찾기</p>
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="button_box">
                         <li>
                             <button type="button" class="popup_btn1">로그인</button>
                         </li>
                     </ul>
-                    <a class="go_join" href="join.html"><p>회원가입</p></a>
+                    <a class="go_join" href="join.html"><p>회원이 아니신가요? 회원가입하기</p></a>
                 </fieldset>
             </form>
         </div>
