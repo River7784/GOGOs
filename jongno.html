@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/jongno.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jongno.js"></script>
+    <title>종로구</title>
+    <link rel="icon" href="images/main_logo_icon_green_ver3.png">
+    <link rel="favicon" href="images/main_logo_icon_green_ver3.png">
+</head>
+<body>
+   <!-- 레이어 팝업시 배경 클릭안되고 블러 처리용 div -->
+   <div id="blur"></div>
+   <!-- 로그인 팝업창 -->
+   <div id="login_popup">
+       <a href="#" class="popup_close"><img src="images/icon_img/x_img.png" alt="닫기" class="popup_close_img"></a>
+       <div class="login_popup_content">
+           <form action="#" id="login_form">
+               <fieldset>
+                   <legend>로그인</legend>
+                   <h2 class="login_head">로그인</h2>
+                   <ul class="login_box">
+                       <li class="popup_first_li">
+                           <p class="id_p common_p_style">아이디</p>
+                           <input type="text" class="popup_id common_popup_style" placeholder="아이디 입력">
+                       </li>
+                       <li>
+                           <p class="pw_p common_p_style">비밀번호</p>
+                           <input type="password" class="popup_pw common_popup_style" placeholder="비밀번호 입력">
+                           <p class="findpw_p">비밀번호 찾기</p>
+                       </li>
+                   </ul>
+                   <ul class="button_box">
+                       <li>
+                           <button type="button" class="popup_btn1">로그인</button>
+                       </li>
+                   </ul>
+                   <a class="go_join" href="join.html"><p>회원이 아니신가요? 회원가입하기</p></a>
+               </fieldset>
+           </form>
+       </div>
+   </div>
+    <div id="Allwrap">
+        <!--div width : 100%, 안에 section들 크기를 max 1000px-->
+        <div id="head">
+            <section id="bg1" class="bg">
+                <h2 class="all_dis_none">백그라운드전체</h2>
+                <div class="bg_wrap">
+                    <div class="bg_div bg_img1">
+                        <img class="img1" src="images/bg_img/sub_bg_img1.jpeg" alt="벚꽃">
+                        <p class="p1">
+                            서울특별시
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <header id="main_header">
+                <h1 id="main_logo" class="common_style_header">
+                    <a href="index.html">
+                        <img src="images/main_logo_icon_green_ver3.png" alt="메인로고">
+                    </a>
+                </h1>
+                <ul id="login_link" class="common_style_header">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+                <nav>
+                    <ul id="main_menu" class="common_style_header">
+                        <li><a href="location.html">장소</a></li>
+                        <li><a href="#">테마</a></li>
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="content_wrap">
+            <div id="location_wrap">
+                <div id="loca_items">
+                    <!-- 1번컨텐츠 -->
+                    <div id="dir_menu">
+                        <ul class="dir_ul_link">
+                            <li><a href="#place_wrap">추천 명소</a></li>
+                            <li><a href="#tips_wrap">팁!</a></li>
+                            <li><a href="#footer">맨 아래로..</a></li>
+                        </ul>
+                    </div>
+                    <div id="info_wrap">
+                        <div id="intro_jongno">
+                            <h2 class="intro_head">종로구</h2>
+                            <h3 class="intro_head_sub">역사와 문화를 품고있는 서울의 중심</h3>
+                            <h4 class="intro_p_head1">종로구 알아보기</h4>
+                            <p class="info_jongno1 info_jongno_common">
+                                서울특별시의 중심부에 위치한 자치구.<br>
+                                중구와 함께 서울의 도심을 이룹니다.<br>
+                                동쪽으로 동대문구, 서쪽으로 서대문구와 은평구, 남쪽으로 청계천을 맞대고 중구, 북동쪽으로 성북구와 접해있고,<br>
+                                북한산을 경계로 북쪽으로 경기도 고양시 덕양구 효자동과도 접합니다.<br>
+                                구청은 수송동에 있으며, 광화문역 2번 출구에서 가깝습니다.<br>
+                            </p>
+                            <h4 class="intro_p_head2">종로구의 역사</h4>
+                            <p class="info_jongno2 info_jongno_common">    
+                                '종로'라는 이름은 조선시대 한양의 도성문의 개폐 시각을 알려주는 큰 종을 매달았던 종루에서부터 비롯된 것으로 종이 있는 거리라는 뜻에서 '종로'가 되었습니다.<br>
+                                전통적으로 한반도의 최중심이었지만 중구가 아닌데, 종로'구'가 탄생한 일제강점기에 경성의 중심은 일본인들이 많이 거주하는 번화가였던 명동 일대였고,<br>
+                                그래서 조선인들이 많이 살던 종로구는 '중구'라는 이름을 받을 수 없었기 때문입니다.
+                            </p>
+                            <h4 class="intro_p_head3">종로구의 상징성</h4>
+                            <p class="info_jongno3 info_jongno_common">
+                                종로구는 대한민국의 수도 서울특별시의 중심인 정치 1번지로<br>
+                                정부서울청사와 광화문광장이 있어 정치적 상징성과 중요성이 있는 곳입니다.<br>
+                                행정안전부의 행정구역 코드 상으로 대한민국의 모든 기초자치단체 중 선두에 서 있는 곳이기도 하며,<br>
+                                중앙선거관리위원회에서 선거결과를 발표할 때도 이 순서에 맞춰서 부릅니다.<br>
+                                1996년~2003년 자가용 차량 번호판도 이 순서에 따라 배정되었습니다.<br>
+                                종로구의 학군은 서울특별시교육청 5학군으로 분류가 됩니다.<br>
+                                역사적으로는 조선시대 궁궐인 경복궁과 창경궁, 세계문화 유산인 창덕궁과 종묘 등도 이 종로구에 속해 있어 전통과 문화가 잘 보존된 지역이기도 합니다.
+                            </p>
+                            <cite class="from_wiki">출처 : 나무위키</cite>
+                            <div class="p_blur"></div>
+                        </div>
+                        <p class="read_more">더보기</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2번컨텐츠 -->
+            <div id="place_wrap">
+                <div id="second_con">
+                    <div id="side_div">
+                        <h2 class="content2_head">추천 명소</h2>
+                        <ul class="side_ul">
+                            <li><a href="#"><img src="images/jongno_img/gyeungbok.jpeg" alt="경복궁"><h3>경복궁</h3><p>경복궁설명</p></a></li>
+                            <li><a href="#"><img src="images/jongno_img/jongmyo.jpeg" alt="종묘"><h3>종묘</h3><p>종묘설명</p></a></li>
+                            <li><a href="#"><img src="images/jongno_img/gw_park.jpeg" alt="광화문광장"><h3>광화문광장</h3><p>광화문광장설명</p></a></li>
+                            <li><a href="#"><img src="images/jongno_img/chung.jpeg" alt="청계천"><h3>청계천</h3><p>청계천설명</p></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 맵 시작 -->
+                    <div class="map_wrap">
+                        <div id="map" style="width: 100%; height: 100%;"></div>
+                        <div class="custom_typecontrol radius_border">
+                            <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+                            <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+                        </div>
+                        <div class="custom_zoomcontrol radius_border"> 
+                            <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+                            <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+                        </div>
+                    </div>    
+                    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d80d40af00b16e004fffb0fd9369eaaf"></script>
+                    <script>
+                        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                            mapOption = { 
+                                center: new kakao.maps.LatLng(37.57350, 126.97895), // 지도의 중심좌표
+                                level: 6 // 지도 시작 확대 레벨
+                            };  
+                        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성 
+                            
+                        // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수
+                        function setMapType(maptype) { 
+                            var roadmapControl = document.getElementById('btnRoadmap');
+                            var skyviewControl = document.getElementById('btnSkyview'); 
+                            if (maptype === 'roadmap') {
+                                map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);    
+                                roadmapControl.className = 'selected_btn';
+                                skyviewControl.className = 'btn';
+                            } else {
+                                map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);    
+                                skyviewControl.className = 'selected_btn';
+                                roadmapControl.className = 'btn';
+                            }
+                        }
+                        // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열 
+                        var positions = [
+                            {
+                                content: '<div style="width:150px;height:130px;text-align:center;padding:6px 0;"><img src="images/jongno_img/gyeungbok.jpeg" alt="경복궁"  style="width:120px; height:100px;""><p style="margin-top:5px;">경복궁<p></div>', 
+                                latlng: new kakao.maps.LatLng(37.57846, 126.97700)
+                            },
+                            {
+                                content: '<div style="width:150px;height:130px;text-align:center;padding:6px 0;"><img src="images/jongno_img/gw_park.jpeg" alt="광화문광장"  style="width:120px; height:100px;""><p style="margin-top:5px;">광화문광장<p></div>', 
+                                latlng: new kakao.maps.LatLng(37.57511, 126.97710)
+                            },
+                            {
+                                content: '<div style="width:150px;height:130px;text-align:center;padding:6px 0;"><img src="images/jongno_img/jongmyo.jpeg" alt="종묘"  style="width:120px; height:100px;""><p style="margin-top:5px;">종묘<p></div>', 
+                                latlng: new kakao.maps.LatLng(37.57461, 126.99378)
+                            },
+                            {
+                                content: '<div style="width:150px;height:130px;text-align:center;padding:6px 0;"><img src="images/jongno_img/chung.jpeg" alt="청계천"  style="width:120px; height:100px;""><p style="margin-top:5px;">청계천<p></div>',
+                                latlng: new kakao.maps.LatLng(37.56916, 126.97862)
+                            }
+                        ];
+
+                        for (var i = 0; i < positions.length; i ++) {
+                            // 마커 생성
+                            var marker = new kakao.maps.Marker({
+                                map: map, // 마커를 표시할 지도
+                                position: positions[i].latlng // 마커의 위치
+                            });
+
+                            // 마커에 표시할 인포윈도우 생성
+                            var infowindow = new kakao.maps.InfoWindow({
+                                content: positions[i].content // 인포윈도우에 표시할 내용
+                            });
+
+                            // 마커에 mouseover 이벤트와 mouseout 이벤트 등록
+                            // 이벤트 리스너로는 클로저를 만들어 등록
+                            // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트 등록
+                            kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+                            kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+                        }
+
+                        // 인포윈도우를 표시하는 클로저를 만드는 함수 
+                        function makeOverListener(map, marker, infowindow) {
+                            return function() {
+                                infowindow.open(map, marker);
+                            };
+                        }
+
+                        // 인포윈도우를 닫는 클로저를 만드는 함수
+                        function makeOutListener(infowindow) {
+                            return function() {
+                                infowindow.close();
+                            };
+                        }
+
+                        // 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수
+                        function zoomIn() {
+                            map.setLevel(map.getLevel() - 1);
+                        }
+                        
+                        // 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수
+                        function zoomOut() {
+                            map.setLevel(map.getLevel() + 1);
+                        }
+                    </script>
+                    <!-- 맵끝 -->
+                </div>
+            </div>
+            <!-- 3번 컨텐츠 -->
+            <div id="tips_wrap">
+                <div id="third_con">
+                    <div id="tips">
+                        <h2 class="tips_head">팁!</h2>
+                        <ul class="tips_ul">
+                            <li><a href="#"><img src="images/icon_img/question.png" alt="할것들"><p>여기서<br> 어떤걸 할까요?</p></a></li>
+                            <li><a href="#"><img src="images/icon_img/calender.png" alt="방문시기"><p>언제<br>방문하는게<br> 괜찮을까요?</p></a></li>
+                            <li><a href="#"><img src="images/icon_img/book.png" alt="체크리스트"><p>꿀팁들</p></a></li>
+                            <li><a href="#"><img src="images/icon_img/map.png" alt="다른곳"><p>먼저<br>다녀왔어요!</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <footer id="footer">
+                <ul id="footer_link">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <address>
+                    <span>&copy;2023 River All Rights Reserved</span>
+                </address>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
